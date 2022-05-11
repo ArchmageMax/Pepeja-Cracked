@@ -1,5 +1,5 @@
 # Pepeja-Cracked
-The extremely scuffed 2d unity game of JC and Max
+The extremely scuffed 2d unity game of JC and Max [SAMPLE TEXT]
 
 We want to create a quick and fun game to play, and relieve stress during breaks from studying. We want our entertaining game to be centred around flying about freely in aeroplanes or other flying objects (in 2D).
 
