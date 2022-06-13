@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "533623159239",
+    "firebase_url": "https://pasig-db-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "pasig-db",
+    "storage_bucket": "pasig-db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533623159239:android:76924fc1d0d469f22741e2",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.com.unity.template.mobile2D"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533623159239-6s38ojm2ojdc94hcdau9hj5rh7h77ev4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-WMpgWU0khUbDUjIFbZGz0oBsjOAnwGE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "533623159239-6s38ojm2ojdc94hcdau9hj5rh7h77ev4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

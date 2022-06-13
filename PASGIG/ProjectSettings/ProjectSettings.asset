@@ -136,7 +136,6 @@ PlayerSettings:
     Others: 1
   bundleVersion: 1.0.2
   preloadedAssets:
-  - {fileID: 5126563928472254207, guid: f2545aa1bc6aae140b039f733f8c8dae, type: 2}
   - {fileID: 11400000, guid: 4300ea9c853e0ca4888bdd52dfd88cc6, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -153,7 +152,6 @@ PlayerSettings:
   m_ColorGamuts: 00000000
   targetPixelDensity: 30
   resolutionScalingMode: 0
-  resetResolutionOnWindowResize: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
