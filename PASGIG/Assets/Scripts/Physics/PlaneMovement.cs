@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class PlaneMovement : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class PlaneMovement : MonoBehaviour
 
     Rigidbody2D rb;
 
+    PhotonView view;
 
     public Animator afterburnerAnimator;
     private string currentState;
@@ -42,14 +44,19 @@ public class PlaneMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        view = GetComponent<PhotonView>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        MovY = joystick.Vertical;
-        MovX = joystick.Horizontal;
-        JoystickDir = joystick.Direction;
+        if(view.IsMine)
+        {
+            MovY = joystick.Vertical;
+            MovX = joystick.Horizontal;
+            JoystickDir = joystick.Direction;
+        }
+        
     }
     
     private void FixedUpdate()

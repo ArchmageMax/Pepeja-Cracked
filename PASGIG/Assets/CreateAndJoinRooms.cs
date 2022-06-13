@@ -8,17 +8,19 @@ using TMPro;
 public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
 {
     
-    public TMP_InputField createInput;
-    public TMP_InputField joinInput;
+    public InputField createInput;
+    public InputField joinInput;
 
     public void CreateRoom()
     {
+        Debug.Log("The room name is " + createInput.text);
         PhotonNetwork.CreateRoom(createInput.text);
         Debug.Log("Room Created");
     }
 
     public void JoinRoom()
     {
+        Debug.Log("The room you are trying to join is named " + joinInput.text);
         PhotonNetwork.JoinRoom(joinInput.text);
         Debug.Log("Room Joined");
     }

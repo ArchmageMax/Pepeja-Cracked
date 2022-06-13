@@ -679,13 +679,33 @@ PrefabInstance:
       propertyPath: sceneViewId
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5239858418542421621, guid: 010080dffbb088144b112320dd38ac4c, type: 3}
+      propertyPath: ObservedComponents.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239858418542421621, guid: 010080dffbb088144b112320dd38ac4c, type: 3}
+      propertyPath: ObservedComponents.Array.data[0]
+      value: 
+      objectReference: {fileID: 4013944824553246380}
+    - target: {fileID: 6182039527710409124, guid: 010080dffbb088144b112320dd38ac4c, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6182039527710409125, guid: 010080dffbb088144b112320dd38ac4c, type: 3}
+      propertyPath: Speed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6182039527710409125, guid: 010080dffbb088144b112320dd38ac4c, type: 3}
       propertyPath: joystick
       value: 
       objectReference: {fileID: 2929252284605075080}
     - target: {fileID: 6182039527710409125, guid: 010080dffbb088144b112320dd38ac4c, type: 3}
       propertyPath: Acceleration
-      value: 4
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6182039527710409125, guid: 010080dffbb088144b112320dd38ac4c, type: 3}
+      propertyPath: RotationControl
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6182039527710409126, guid: 010080dffbb088144b112320dd38ac4c, type: 3}
       propertyPath: m_Name
@@ -737,6 +757,44 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 010080dffbb088144b112320dd38ac4c, type: 3}
+--- !u!1 &4434681369779095361 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6182039527710409126, guid: 010080dffbb088144b112320dd38ac4c, type: 3}
+  m_PrefabInstance: {fileID: 7512042695404259047}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4013944824553246380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4434681369779095361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8efc6b1d64977384eb3405357896c656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PositionModel:
+    SynchronizeEnabled: 1
+    TeleportEnabled: 1
+    TeleportIfDistanceGreaterThan: 1000
+    InterpolateOption: 2
+    InterpolateMoveTowardsSpeed: 1
+    InterpolateLerpSpeed: 1
+    ExtrapolateOption: 2
+    ExtrapolateSpeed: 1
+    ExtrapolateIncludingRoundTripTime: 1
+    ExtrapolateNumberOfStoredPositions: 1
+  m_RotationModel:
+    SynchronizeEnabled: 0
+    InterpolateOption: 1
+    InterpolateRotateTowardsSpeed: 180
+    InterpolateLerpSpeed: 5
+  m_ScaleModel:
+    SynchronizeEnabled: 0
+    InterpolateOption: 0
+    InterpolateMoveTowardsSpeed: 1
+    InterpolateLerpSpeed: 0
 --- !u!4 &4434681369779095389 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6182039527710409146, guid: 010080dffbb088144b112320dd38ac4c, type: 3}
