@@ -24,4 +24,17 @@ public class bulletBehaviour : MonoBehaviour
     {
         Destroy(gameObject);
     }
+<<<<<<< Updated upstream
+=======
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("We hit an enemy!");
+        
+        if(collision.gameObject.CompareTag("Enemy"))
+        {
+            Explode();
+        }
+    }
+>>>>>>> Stashed changes
 }
