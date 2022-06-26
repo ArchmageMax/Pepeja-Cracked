@@ -42,7 +42,7 @@ public class EnemyHP : MonoBehaviour
 
     void EnemyDestroyed()
     {
-        playerScore.AddScore(100);
+        playerScore.AddScore(maxHealth);
         Destroy(gameObject);
     }
 }

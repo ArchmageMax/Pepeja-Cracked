@@ -33,7 +33,7 @@ public class PlaneMovement : MonoBehaviour
     //Joystick params
     float MovY, MovX = 1;
     Vector2 JoystickDir = Vector2.zero;
-    //float joystickMagnitude = 0;
+    float joystickMagnitude = 1;
 
     //Wing behavior
     public float wingDrag = 1f; //this is for how much you slow down when you turn and how much of

@@ -40,9 +40,9 @@ public class MissileBehaviour : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("We hit an enemy!");
+        Debug.Log("An enemy hit you!");
         
-        if(collision.gameObject.CompareTag("Enemy"))
+        if(collision.gameObject.CompareTag("Player"))
         {
             Explode();
         }

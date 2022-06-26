@@ -10,13 +10,18 @@ public class PlayerCollision : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Enemy"))
         {
-            DoColDamageToPlayer();
+            DoDamageToPlayer(10);
+        }
+
+        if(collision.gameObject.CompareTag("Missile"))
+        {
+            DoDamageToPlayer(2);
         }
     }
 
-    void DoColDamageToPlayer()
+    void DoDamageToPlayer(int damagetaken)
     {
         Debug.Log("Took Damage!");
-        playerHP.TakeDamage(10);
+        playerHP.TakeDamage(damagetaken);
     }
 }
