@@ -9,6 +9,8 @@ public class PlayerHP : MonoBehaviour
     public int currentHealth;
 
     public HPBar healthBar;
+    public PlayerScore playerscore;
+    public GameOverScreen gameover;
 
     // Start is called before the first frame update
     void Start()
@@ -32,14 +34,14 @@ public class PlayerHP : MonoBehaviour
 
         healthBar.SetHealth(currentHealth);
 
-        // if(currentHealth == 0)
-        // {
-        //     PlayerDestroyed();
-        // }
+        if(currentHealth <= 0)
+        {
+            GameOver();
+        }
     }
 
-    void PlayerDestroyed()
+    public void GameOver() 
     {
-        Destroy(gameObject);
+        gameover.Setup(playerscore.score);
     }
 }

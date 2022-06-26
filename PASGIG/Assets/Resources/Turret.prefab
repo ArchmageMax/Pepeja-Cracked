@@ -165,7 +165,7 @@ GameObject:
   - component: {fileID: 6291219516587547344}
   m_Layer: 0
   m_Name: Turret
-  m_TagString: Enemy
+  m_TagString: TurretEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -312,7 +312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b0b008495bfc9048b2a934f5c62c198, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 150
+  maxHealth: 100
   currentHealth: 0
   playerScore: {fileID: 0}
 --- !u!114 &6291219516587547344

@@ -27,8 +27,8 @@ public class TurretEnemy : MonoBehaviour
     {
         if(Time.time > nextFire) 
         {
-            Instantiate(bulletPrefab, muzzle1.position, Quaternion.identity);
-            Instantiate(bulletPrefab, muzzle2.position, Quaternion.identity);
+            Instantiate(bulletPrefab, muzzle1.position, transform.rotation);
+            Instantiate(bulletPrefab, muzzle2.position, transform.rotation);
             nextFire = Time.time + fireRate;
         }
     }

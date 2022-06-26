@@ -13,6 +13,16 @@ public class PlayerCollision : MonoBehaviour
             DoDamageToPlayer(10);
         }
 
+        if(collision.gameObject.CompareTag("TurretEnemy"))
+        {
+            DoDamageToPlayer(20);
+        }
+
+        if(collision.gameObject.CompareTag("Bullet"))
+        {
+            DoDamageToPlayer(2);
+        }
+        
         if(collision.gameObject.CompareTag("Missile"))
         {
             DoDamageToPlayer(2);

@@ -50,7 +50,10 @@ public class MissileBehaviour : MonoBehaviour
 
     private void FixedUpdate() 
     {
-        moveMissile(movement);
+        if(player!=null)
+        {
+            moveMissile(movement);
+        }
     }
     
     void moveMissile(Vector2 direction)

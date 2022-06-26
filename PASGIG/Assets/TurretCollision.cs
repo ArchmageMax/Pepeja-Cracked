@@ -15,7 +15,8 @@ public class TurretCollision : MonoBehaviour
 
         if(collision.gameObject.CompareTag("Bullet"))
         {
-            DoDamageToEnemy(50);
+            Debug.Log("Enemy hit by bullet");
+            DoDamageToEnemy(25);
         }
     }
 
