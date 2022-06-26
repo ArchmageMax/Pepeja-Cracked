@@ -24,8 +24,6 @@ public class bulletBehaviour : MonoBehaviour
     {
         Destroy(gameObject);
     }
-<<<<<<< Updated upstream
-=======
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -36,5 +34,4 @@ public class bulletBehaviour : MonoBehaviour
             Explode();
         }
     }
->>>>>>> Stashed changes
 }

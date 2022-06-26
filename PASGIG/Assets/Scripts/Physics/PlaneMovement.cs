@@ -2,11 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-<<<<<<< Updated upstream
-=======
 using UnityEngine.UI;
 using Photon.Pun;
->>>>>>> Stashed changes
 
 public class PlaneMovement : MonoBehaviour
 {
@@ -21,10 +18,7 @@ public class PlaneMovement : MonoBehaviour
 
     Rigidbody2D rb;
 
-<<<<<<< Updated upstream
-=======
     //PhotonView view;
->>>>>>> Stashed changes
 
     public Animator afterburnerAnimator;
     private string currentState;
@@ -39,7 +33,7 @@ public class PlaneMovement : MonoBehaviour
     //Joystick params
     float MovY, MovX = 1;
     Vector2 JoystickDir = Vector2.zero;
-    float joystickMagnitude = 0;
+    //float joystickMagnitude = 0;
 
     //Wing behavior
     public float wingDrag = 1f; //this is for how much you slow down when you turn and how much of
@@ -67,16 +61,9 @@ public class PlaneMovement : MonoBehaviour
     
     private void FixedUpdate()
     {
-<<<<<<< Updated upstream
-
-
-        joystickMagnitude = (float) Math.Sqrt(MovX*MovX + MovY*MovY);
-        //changing animation state of afterburner
         UpdateAnimation();
         
-=======
         float joystickMagnitude = (float) Math.Sqrt(MovX*MovX + MovY*MovY);
->>>>>>> Stashed changes
 
         //adding thrust based on magnitude of joystick displacement
         rb.AddForce(CalculateThrust());
